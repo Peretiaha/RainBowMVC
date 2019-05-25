@@ -1,0 +1,98 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+}
+
+.Header {
+    width: 100%;
+    height: 310px;
+}
+
+.navbar-default {
+    width: 100%;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.MyNavBar {
+    width: 100%;
+    height: 140px;
+    color: #FFFFFF;
+    background-color: rgba(0, 191, 191, 0.996078431372549);
+}
+
+.navbarLogo {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background: url(../img/part1.png) no-repeat center top;
+    display: block;
+    background-size: cover;
+}
+
+.navbarLogo2 {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background: url(../img/part2.png) no-repeat center top;
+    display: block;
+    background-size: cover;
+    margin-left: 240px;
+}
+
+
+
+.Nav {
+    padding-top: 172px;
+    float: right;
+    width: 100%;
+    height: 130px;
+    font-size: 28px;
+    background-color: rgba(128, 255, 255, 0.996078431372549);
+}
+
+.NavBlock {
+    position: relative;
+    width: 70%;
+    float: right;
+    height: 110px;
+    font-size: 45px;
+    padding-top: 40px;
+    padding-right: 60px;
+    opacity: 0.9;
+    color: black;
+}
+
+.CommandPage {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+    background-color: black;
+}
+
+.Command {
+    height: 350px;
+    width: 90%;
+    margin: auto;
+    margin-top: 120px;
+    padding-left: 50px;
+    background-color: gray;
+    
+    
+}
+
+.ImgLeft {
+    height: 90%;
+    width: 400px;
+    background: no-repeat center top;
+    padding-top: 30px;
+    float: left;
+}
+
+.TextCommand {
+     padding: 15px;
+
+}

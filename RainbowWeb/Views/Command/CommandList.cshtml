@@ -1,0 +1,56 @@
+﻿@model RainbowWeb.Models.Commands
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<head>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="~/Content/CommandList.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.css" />
+
+</head>
+
+
+<body>
+    <header class="Header">
+        <div class="navbarLogo"></div>
+        <div class="navbarLogo2"></div>
+        <div class="Nav">
+            <nav class="MyNavBar" id="menu">
+                <div class="NavBlock">
+                    @*<a href="#Home">Home</a>*@
+                    @Html.ActionLink("Home", "../Home/Index")
+                </div>
+            </nav>
+        </div>
+    </header>
+    <container>
+        <section>
+            <div class="CommandPage">
+                @foreach (var i in ViewBag.Command)
+                {
+                    <div class="Command">
+                        <div class="ImgLeft">
+                            @Html.Raw("<img style='width:370px; height:250px;' src=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(i.Img) + "\" />")
+                        </div>
+                        <div class="TextCommand">
+                            <div class="TitleCommand">
+                                <h3>@i.Name</h3>
+                                <div class="SubTitleCommand">
+                                    <h4>@i.Description</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+    </container>
+
+
+
+</body>
+
