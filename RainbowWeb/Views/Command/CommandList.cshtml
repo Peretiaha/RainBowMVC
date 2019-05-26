@@ -29,22 +29,47 @@
     <container>
         <section>
             <div class="CommandPage">
+
                 @foreach (var i in ViewBag.Command)
                 {
-                    <div class="Command">
-                        <div class="ImgLeft">
-                            @Html.Raw("<img style='width:370px; height:250px;' src=\"data:image/jpeg;base64,"
-                                + Convert.ToBase64String(i.Img) + "\" />")
-                        </div>
-                        <div class="TextCommand">
-                            <div class="TitleCommand">
-                                <h3>@i.Name</h3>
-                                <div class="SubTitleCommand">
-                                    <h4>@i.Description</h4>
+                    if (ViewBag.i % 2 != 0)
+                    {
+                        <div class="Command">
+                            <div class="ImgLeft">
+                                @Html.Raw("<img style='width:370px; height:250px;' src=\"data:image/jpeg;base64,"
+                                      + Convert.ToBase64String(i.Img) + "\" />")
+                            </div>
+                            <div class="TextCommand">
+                                <div class="TitleCommand">
+                                    <h3>@i.Name</h3>
+                                    <div class="SubTitleCommand">
+                                        <h4>@i.Description</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
+                    else
+                    {
+                        <div class="Command">
+                            <div class="TextCommandLeft">
+                                <div class="TitleCommand">
+                                    <h3>@i.Name</h3>
+                                    <div class="SubTitleCommand">
+                                        <h4>@i.Description</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ImgRight">
+                                @Html.Raw("<img style='width:370px; height:250px;' src=\"data:image/jpeg;base64,"
+                                      + Convert.ToBase64String(i.Img) + "\" />")
+                            </div>
+                        </div>
+
+
+
+                    }
+                    ViewBag.i++;
                 }
             </div>
         </section>

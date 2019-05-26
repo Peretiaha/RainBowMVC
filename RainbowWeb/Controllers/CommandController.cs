@@ -16,6 +16,7 @@ namespace RainbowWeb.Controllers
             using (DbModel db = new DbModel())
             {
                 ViewBag.Command = db.Commands.ToList();
+                ViewBag.i = 1;
             }
 
                 return View();

@@ -97,6 +97,7 @@
             <div class="Contact">
                 @using (Html.BeginForm())
                 {
+                <div class="AddContact">
                     <div class="form-group">
                         @Html.Label("Email", htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
@@ -105,13 +106,14 @@
                         </div>
                     </div>
                     <label class="label-danger">@ViewBag.ContactError </label>
-                    <label class="label-success">@ViewBag.ContactError </label>
+                    <label class="label-success">@ViewBag.ContactSuccess </label>
                     <div class="form-group" id="What">
 
                         <div class="col-md-offset-2 col-md-10">
                             <input type="submit" value="Subscribe" class="btn btn-default" />
                         </div>
                     </div>
+                </div>
 
                 }
 

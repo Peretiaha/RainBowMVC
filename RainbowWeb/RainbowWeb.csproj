@@ -145,6 +145,7 @@
     <Compile Include="Models\Contacts.cs" />
     <Compile Include="Models\DbModel.cs" />
     <Compile Include="Models\LoginUser.cs" />
+    <Compile Include="Models\PromocodeCreate.cs" />
     <Compile Include="Models\Registration.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

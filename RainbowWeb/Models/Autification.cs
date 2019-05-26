@@ -12,9 +12,27 @@ namespace RainbowWeb.Models
         {
             using (DbModel db = new DbModel())
             {
-                if (db.Users.Any(x => x.Login == user.Login && x.Password == user.Password))
+                LoginUser lus = new LoginUser();
+                if (db.Users.Any(x => x.Login == user.Login && x.Password == user.Password && x.Status == true))
                 {
-                    LoginUser lus = new LoginUser() {LoginDate=DateTime.Now, Login=user.Login, Password=user.Password, Status = db.Users.Any(x=>x.Status)};
+
+                    lus.LoginDate = DateTime.Now;
+                    lus.Login = user.Login;
+                    lus.Password = user.Password;
+                    lus.Status = true;
+
+                    db.LoginUsers.Add(lus);
+                    db.SaveChanges();
+                    return true;
+                }
+                else if (db.Users.Any(x => x.Login == user.Login && x.Password == user.Password && x.Status == false))
+                {
+                    lus.LoginDate = DateTime.Now;
+                    lus.Login = user.Login;
+                    lus.Password = user.Password;
+                    lus.Status = false;
+                    
+
                     db.LoginUsers.Add(lus);
                     db.SaveChanges();
                     return true;

@@ -13,7 +13,7 @@ namespace RainbowWeb.Models
             {
                 Contacts con = new Contacts();
                 con.Email = user.Email;
-                if (db.Contacts.Any(x => x.Email == con.Email)) return false;
+                if (db.Contacts.Any(x => x.Email.ToUpper() == con.Email.ToUpper())) return false;
                 else
                 {
                     db.Contacts.Add(con);

@@ -70,7 +70,7 @@
     margin: 0 auto;
     width: 1000px;
     height: 100%;
-    background-color: black;
+    /*background-color: black;*/
 }
 
 .Command {
@@ -79,7 +79,7 @@
     margin: auto;
     margin-top: 120px;
     padding-left: 50px;
-    background-color: gray;
+    background-color: white;
     
     
 }
@@ -95,4 +95,19 @@
 .TextCommand {
      padding: 15px;
 
+}
+
+
+.ImgRight {
+    height: 90%;
+    width: 400px;
+    background: no-repeat center top;
+    padding-top: 30px;
+    float: right;
+}
+
+.TextCommandLeft {
+    padding: 15px;
+    width: 50%;
+    float: left;
 }

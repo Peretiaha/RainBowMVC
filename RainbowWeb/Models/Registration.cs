@@ -16,6 +16,7 @@ namespace RainbowWeb.Models
 
                 else {
                     user.ConfirmPassword = user.Password;
+                    user.PromoCode = PromocodeCreate.Promo();
                     db.Users.Add(user);
                     db.SaveChanges();
                 }

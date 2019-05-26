@@ -27,7 +27,7 @@
     position: absolute;
     height: 300px;
     width: 300px;
-    background-color: /*url(../img/part1.png) no-repeat center top;*/ red;
+    background: url(../img/part1.png) no-repeat center top;
     display: block;
     background-size: cover;
 }
@@ -113,6 +113,8 @@ a {
 }
 
 .Contact {
+    padding: 0;
+    margin: 0;
     height: 500px;
     width: 100%;
     background: rgba(128, 164, 255, 1);
@@ -125,4 +127,9 @@ a {
     /*background: url(../img/RainbowMain/RainbowBackGround1.png) no-repeat center top;*/
     background-color: aqua;
     opacity: 0.8;
+}
+
+.AddContact {
+    padding-top: 100px;
+    margin: 110px;
 }

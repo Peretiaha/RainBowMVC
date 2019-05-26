@@ -23,16 +23,19 @@ namespace RainbowWeb.Controllers
             if ((user.Login == "" || user.Login == null) && user.Email != "")
             {
                 AddContacts.Add(user);
-                ViewBag.ContactError = "Подписка оформлена!";
+                ViewBag.ContactError = "Пользователь с такой почтой уже подписан на рассылку!";
+                ViewBag.ContactSuccess = "Подписка оформленна!";
+
             }
             else if (Autification.IsRegstered(user))
             {
 
                 if (Autification.UserStatus(user) == true)
-                    return View("../Home/Contact", user);  //Админ панель
+                    return View("../Admin/AddCommand");  //Админ панель
+                else return View("../Home/About");
             }
             else ViewBag.LoginError = "Invalid data";
-            return View("../Home/About");  // учетная запись пользователя
+            return View("../Home/Index");  // учетная запись пользователя
         }
 
         public ActionResult About()

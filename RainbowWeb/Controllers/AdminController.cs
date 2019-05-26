@@ -13,6 +13,7 @@ namespace RainbowWeb.Controllers
         [HttpGet]
         public ActionResult AddCommand()
         {
+           
             return View();
         }
 
