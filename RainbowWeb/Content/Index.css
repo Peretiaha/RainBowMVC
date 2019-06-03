@@ -3,9 +3,11 @@
     margin: 0;
 }
 
+
+
 .Header {
     width: 100%;
-    height: 310px;
+    height: 260px;
 }
 
 .navbar-default {
@@ -18,38 +20,26 @@
 
 .MyNavBar {
     width: 100%;
-    height: 140px;
+    height: 115px;
     color: #FFFFFF;
     background-color: rgba(0, 191, 191, 0.996078431372549);
 }
 
 .navbarLogo {
     position: absolute;
-    height: 300px;
-    width: 300px;
-    background: url(../img/part1.png) no-repeat center top;
+    height: 250px;
+    width: 500px;
+    background: url("../img/RainbowMain/rainbow.png") no-repeat center top;
+    background-size: contain;
     display: block;
-    background-size: cover;
 }
-
-.navbarLogo2 {
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    background: url(../img/part2.png) no-repeat center top;
-    display: block;
-    background-size: cover;
-    margin-left: 285px;
-}
-
 
 
 .Nav {
-    padding-top: 172px;
+    padding-top: 147px;
     float: right;
     width: 100%;
-    height: 130px;
-    font-size: 28px;
+    height: 10px;
     background-color: rgba(128, 255, 255, 0.996078431372549);
 }
 
@@ -62,24 +52,163 @@
     padding-top: 40px;
     padding-right: 60px;
     opacity: 0.9;
+}
+
+a:link {
     color: black;
 }
+
+a:hover {
+    color: white;
+}
+
+a:visited {
+    color: #000;
+}
+
 
 a {
-    padding-left: 100px;
-    color: black;
+    padding-left: 80px;
+    font-kerning: normal;
+    font-family: 'Rockwell Обычный', 'Rockwell';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: #000000;
 }
 
-.Main {
-    height: 1000px;
-    width: 100%;
-    /*background: url(../img/RainbowMain/RainbowBackGround1.png) no-repeat center top;*/
-    background-color: gray;
+ul.hor_nav {
+    margin-left: 30%;
+    padding-top: 20px;
+    
 }
+
+    ul.hor_nav li {
+        display: inline;
+        margin-right: 4px;
+        padding: 2px;
+    }
+
+
+.Home {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+    background: url("../img/RainbowMain/HomeBack.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+
+.HomeTitle {
+    height: 200px;
+    width: 43%;
+    padding-top: 120px;
+    padding-left: 130px;
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial';
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    font-style: normal;
+    font-size: 48px;
+    text-align: left;
+    color: #333333;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.row {
+    padding-top: 50px;
+}
+
+.BlockHome {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.Phone1 {
+    height: 500px;
+    width: 210px;
+    background: url("../img/RainbowMain/phone1.png") no-repeat center top;
+    background-size: contain;
+    display: inline-block;
+}
+
+.Phone2 {
+    height: 500px;
+    width: 250px;
+    background: url("../img/RainbowMain/phone2.png") no-repeat center top;
+    background-size: contain;
+    display: inline-block;
+}
+
+
+
+
+.WhatWeCan {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+    background: url("../img/RainbowMain/Background2.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+.panel-body {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Rockwell Полужирный', 'Rockwell Обычный', 'Rockwell';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: #000000;
+}
+
+.WhatSubTitle {
+    padding-top: 250px;
+    margin: 0 auto;
+    width: 69%;
+    text-align: center;
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.ButtonLearn {
+    width: 250px;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 70px;
+    font-family: 'Arial Rounded MT Bold Oblique', 'Arial Rounded MT Bold', 'Arial Rounded MT';
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 25px;
+    color: #000000;
+}
+
+.LearnButton {
+    width: 250px;
+    border-width: 0;
+    background: white;
+    opacity: 0.6;
+    border-radius: 3px;
+}
+
+    .LearnButton:hover {
+        background: purple;
+    }
+
+
+
 
 
 .Login {
-    height: 1300px;
+    height: 1100px;
     width: 100%;
     /*background: url(../img/RainbowMain/RainbowBackGround1.png) no-repeat center top;*/
     background-color: gray;
@@ -110,15 +239,10 @@ a {
     background-color: white;
     margin: 0 auto;
     margin-top: 120px;
+    position: relative;
 }
 
-.Contact {
-    padding: 0;
-    margin: 0;
-    height: 500px;
-    width: 100%;
-    background: rgba(128, 164, 255, 1);
-}
+
 
 
 .What {
@@ -129,7 +253,586 @@ a {
     opacity: 0.8;
 }
 
-.AddContact {
+
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+
+.clouds {
+    height: 1100px;
+    padding-top: 0px;
+    background: linear-gradient(180deg, #96f6f6,#0da3f1, #7e80ff);
+}
+
+
+#u52_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
     padding-top: 100px;
-    margin: 110px;
+    width: 100%;
+    height: 1100px;
+}
+
+#u52 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 917px;
+    display: flex;
+}
+
+    #u52 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u52_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u53_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 383px;
+    height: 499px;
+}
+
+#u53 {
+    border-width: 0px;
+    position: absolute;
+    left: 200px;
+    width: 383px;
+    height: 499px;
+    display: flex;
+    opacity: 0.7;
+}
+
+    #u53 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u53_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u54_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 462px;
+    height: 257px;
+}
+
+#u54 {
+    border-width: 0px;
+    position: absolute;
+    left: -34px;
+    width: 462px;
+    height: 257px;
+    display: flex;
+    opacity: 0.8;
+}
+
+    #u54 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u54_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u55_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    height: 164px;
+}
+
+#u55 {
+    border-width: 0px;
+    position: absolute;
+    left: 299px;
+    width: 300px;
+    height: 164px;
+    display: flex;
+    opacity: 0.8;
+}
+
+    #u55 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u55_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u56_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 383px;
+    height: 499px;
+}
+
+#u56 {
+    border-width: 0px;
+    position: absolute;
+    left: 1088px;
+    width: 383px;
+    height: 499px;
+    display: flex;
+    opacity: 0.69;
+}
+
+    #u56 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u56_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u57_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 413px;
+    height: 220px;
+}
+
+#u57 {
+    border-width: 0px;
+    position: absolute;
+    left: 1215px;
+    width: 413px;
+    height: 220px;
+    display: flex;
+    opacity: 0.81;
+}
+
+    #u57 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u57_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u58_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 383px;
+    height: 499px;
+}
+
+#u58 {
+    border-width: 0px;
+    position: absolute;
+    left: 800px;
+    width: 383px;
+    height: 499px;
+    display: flex;
+    opacity: 0.69;
+}
+
+    #u58 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u58_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u59_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 383px;
+    height: 499px;
+}
+
+#u59 {
+    border-width: 0px;
+    position: absolute;
+    left: 490px;
+    width: 383px;
+    height: 499px;
+    display: flex;
+    opacity: 0.69;
+}
+
+    #u59 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u59_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u60_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 436px;
+    height: 245px;
+}
+
+#u60 {
+    border-width: 0px;
+    position: absolute;
+    left: 717px;
+    width: 436px;
+    height: 245px;
+    display: flex;
+    opacity: 0.8;
+}
+
+    #u60 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u60_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u61_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 485px;
+    height: 245px;
+}
+
+#u61 {
+    border-width: 0px;
+    position: absolute;
+    left: 406px;
+    width: 485px;
+    height: 245px;
+    display: flex;
+    opacity: 0.8;
+}
+
+    #u61 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u61_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+#u62_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    height: 164px;
+}
+
+#u62 {
+    border-width: 0px;
+    position: absolute;
+    left: 1003px;
+    width: 300px;
+    height: 164px;
+    display: flex;
+    opacity: 0.8;
+}
+
+    #u62 .text {
+        position: absolute;
+        align-self: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#u62_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    visibility: hidden;
+}
+
+
+.LoginTitle {
+    padding-top: 250px;
+    text-align: center;
+    font-family: 'Rockwell Полужирный', 'Rockwell Обычный', 'Rockwell';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: #fff;
+    position: relative;
+}
+
+.LoginSubTitle {
+    padding-top: 90px;
+    text-align: center;
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    color: #fff;
+    position: relative;
+}
+
+.LoginBox {
+    width: 55%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 70px;
+    position: relative;
+}
+
+.LoginForm {
+    padding-top: 180px;
+}
+
+.LoginText {
+       margin-left: 180px;
+
+    }
+
+
+.chan1 {
+    width: 35%;
+    height: 500px;
+    background: url("../img/RainbowMain/chan1.png") no-repeat center top;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    margin-top: 260px;
+}
+
+.chan2 {
+    width: 35%;
+    height: 500px;
+    background: url("../img/RainbowMain/chan2.png") no-repeat center top;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 980px;
+}
+
+.LoginTextBox {
+    width: 443px;
+    height: 40px;
+    padding: 3px 2px 3px 2px;
+    font-family: 'Arial Обычный', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: left;
+    text-transform: none;
+    margin: 0 auto;
+    margin-left: 90px;
+    border-color: transparent;
+}
+
+
+.LoginButton {
+    margin-left: 190px;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: 'Arial Обычный', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    float: left;
+    display: inline;
+}
+
+    .LoginButton:hover {
+        background-color: #7e80ff;
+    }
+
+.Promotext {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 24px;
+}
+
+.AddContact {
+    padding-top: 50px;
+}
+
+.dog {
+    width: 400px;
+    height: 400px;
+    background: url("../img/RainbowMain/u63.gif") no-repeat center top;
+    background-size: contain;
+    opacity: 0.5;
+    float: left;
+    float: left;
+}
+
+.Contact {
+    padding: 0;
+    margin: 0;
+    height: 430px;
+    width: 100%;
+    background: rgba(128, 164, 255, 1);
+}
+
+.ContactForm {
+    margin: 0;
+    padding:0;
+    float: none;
+}
+
+.Emailtext {
+    width: 50px;
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #000000;
+}
+
+.ContactInput {
+    width: 600px;
+    height: 53px;
+    padding: 3px 2px 3px 2px;
+    font-family: 'Arial Обычный', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: normal;
+    color: #FFFFFF;
+    text-align: left;
+    text-transform: none;
+    background-color:  #7e80ff;
+    margin-left: 70px;
+    border-color: gray;
+}
+
+.Subbscribe {
+    background-color: #7e80ff;
+    border: 0;
+    margin-left: 600px;
+}
+
+.Subbscribe:hover {
+    background-color: rgba(128, 255, 255, 0.996078431372549);
+    border: 0;
+}
+
+.ContactsubTitle {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background: rgba(1, 84, 120, 0.996078431372549);
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background: #000000;
+}
+
+.Copyright {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    opacity: 0.3;
+    font-size: 25px;
+}
+
+.DoubleRainBow {
+    background: url("../img/RainbowMain/DoubleRainBow.png") no-repeat center top;
+    background-size: contain;
 }

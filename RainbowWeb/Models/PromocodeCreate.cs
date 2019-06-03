@@ -18,7 +18,7 @@ namespace RainbowWeb.Models
             {
                 promocode[i] = (char)rand.Next(0x0041, 0x007A);
                 Thread.Sleep(1);
-            }
+            }   
             string promo = new string(promocode);
             return promo;
             

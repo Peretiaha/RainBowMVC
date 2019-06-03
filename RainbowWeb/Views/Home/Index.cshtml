@@ -1,126 +1,295 @@
 ﻿@model RainbowWeb.Models.Users
 
 
+
 @{
     ViewBag.Title = "Index";
     Layout = null;
 }
 
 <!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <link type="text/css" rel="stylesheet" href="~/Content/Index.css" />
-    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.css" />
-    
-</head>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/Content/Index.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <title>Document</title>
+</head>
 
 <body>
     <header class="Header">
+        @*Home Form*@
         <div class="navbarLogo"></div>
-        <div class="navbarLogo2"></div>
+
         <div class="Nav">
             <nav class="MyNavBar" id="menu">
-                <div class="NavBlock">
-                    <a href="#Home">Home</a>
-                    <a href="#What">What we can?</a>
-                    <a herf="#Login">Login</a>
-                    <a>Contact us</a>
+                <div class="navbar navbar-fluid">
+                    <ul class="hor_nav">
+                        <li class="active"><a href="#Home"> Home </a></li>
+                        <li><a href="#What"> What we can? </a></li>
+                        <li><a href="#Login"> Login </a></li>
+                        <li><a href="#Contacts"> Contact us </a></li>
+                    </ul>
+
                 </div>
             </nav>
         </div>
     </header>
-    <section id="Home">
-        <conteiner class="Main">
-            <div class="Main">
+    <section class="Home" id="Home">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 HomeTitle">
+                <span class="HomeText">
+                    Rainbow lets you stay connected without lifting a finger.
+                    Rainbow is a faster, easier way to do all kinds of useful things.
+                </span>
+            </div>
 
+            <div class="col-md-3 Phone1">
 
             </div>
-        </conteiner>
-    </section>
+            <div class="col-md-3 Phone2">
 
-    <section id="What">
-        <conteiner class="What">
-            <div class="What">
-                <form>
-                    <input type="button" value="Learn more" onClick='location.href="../Command/CommandList"'>
-                </form>
             </div>
-        </conteiner>
+
+
+        </div>
+
+
+    </section>                                              @*What We Can Form*@
+    <section class="WhatWeCan" id="What">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                What we can?
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="WhatSubTitle">
+                <span>
+                    Open YouTube or dial any phone number using your voice. <br>
+
+                    Get a complete list of all commands by clicking on the button below.
+                </span>
+            </div>
+        </div>
+        <div class="ButtonLearn">
+            <form>
+                <input class="LearnButton" type="button" value="Learn more"
+                       onClick='location.href="../Command/CommandList"'>
+            </form>
+        </div>
     </section>
 
 
-    <section id="Login">
-        <conteiner class="Login">
-            <div class="Login">
-                <div class="LoginTitle"> <span>Login</span></div>
-                <div class="LoginSubTitle"> <span>Enter your details below</span></div>
-                <div class="LoginFormBlock">
-                    @using (Html.BeginForm())
-                    {
-                        @Html.AntiForgeryToken()
-                        <div class="form-horizontal">
-                            <hr />
-                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Login, htmlAttributes: new { @class = "control-label col-md-2" })
-                                <div class="col-md-10">
-                                    @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "form-control" } })
-                                    @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
-                                <div class="col-md-10">
-                                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
-                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <label class="label-danger">@ViewBag.LoginError </label>
-                            <div class="form-group" id="What">
-                                <div class="col-md-offset-2 col-md-10">
-                                    <input type="submit" value="Log in" class="btn btn-default" />
-                                </div>
-                            </div>
-                            <div class="" id="What">
-                                @Html.ActionLink("Sign up", "../Registration/RegistrationView")
+    @*Login Form*@
+    <section class="Login" id="Login">
+        <div class="clouds">
+            <div id="u52" class="ax_default image">
+                <img id="u52_img" class="img " src="~/img/RainbowMain/u52.gif" />
+                <div id="u52_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u53" class="ax_default image">
+                <img id="u53_img" class="img " src="~/img/RainbowMain/u53.gif" />
+                <div id="u53_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u54" class="ax_default image">
+                <img id="u54_img" class="img " src="~/img/RainbowMain/u54.gif" />
+                <div id="u54_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u55" class="ax_default image">
+                <img id="u55_img" class="img " src="~/img/RainbowMain/u54.gif" />
+                <div id="u55_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u56" class="ax_default image">
+                <img id="u56_img" class="img " src="~/img/RainbowMain/u53.gif" />
+                <div id="u56_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u57" class="ax_default image">
+                <img id="u57_img" class="img " src="~/img/RainbowMain/u54.gif" />
+                <div id="u57_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u58" class="ax_default image">
+                <img id="u58_img" class="img " src="~/img/RainbowMain/u53.gif" />
+                <div id="u58_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u59" class="ax_default image">
+                <img id="u59_img" class="img " src="~/img/RainbowMain/u53.gif" />
+                <div id="u59_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u60" class="ax_default image">
+                <img id="u60_img" class="img " src="~/img/RainbowMain/u54.gif" />
+                <div id="u60_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u61" class="ax_default image">
+                <img id="u61_img" class="img " src="~/img/RainbowMain/u54.gif" />
+                <div id="u61_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+            </div>
+            <div id="u62" class="ax_default image">
+                <img id="u62_img" class="img " src="~/img/RainbowMain/u54.gif" />
+                <div id="u62_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                </div>
+
+            </div>
+            <div class="LoginTitle">
+                <span id="What">Login</span>
+            </div>
+            <div class="LoginSubTitle">
+                <span>Enter your details below</span>
+            </div>
+
+            <div class="chan1">
+
+            </div>
+            <div class="chan2">
+
+            </div>
+
+            <div class="LoginBox">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal LoginForm">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Login, htmlAttributes: new { @class = "control-label col-md-2 LoginText" })
+                            <div class="col-md-10 LoginTextBox">
+                                @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "LoginTextBox" } })
+                                <br />
+                                @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
                             </div>
                         </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2 LoginText" })
+                            <div class="col-md-10 LoginTextBox">
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "LoginTextBox" } })
+                                <br />
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <label class="text-danger">@ViewBag.LoginError </label>
+
+                        <div class="Buttons">
+                            <input type="submit" value="Log in" class="LoginButton" />
+                            <a href="../Registration/RegistrationView"><input type="button" class="LoginButton" value="Sign up" /></a>
+
+                        </div>
+                        <br />
+                        <div class="Promotext">
+                            <p><span>Sign up and get a promo code that turns <br> off advertising in the application</span></p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <section id="Contacts">
+        @*Conatact Form*@
+        <conteiner>
+
+            <div class="Contact">
+                <div class="dog">
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body" style="margin-right: 250px;">
+                        Contact us
+                    </div>
+                    <div class="ContactsubTitle" style="margin-right: 220px;">
+                        <span>Subscribe to our newsletter to stay update with what is new</span>
+
+                    </div>
+
+                </div>
+
+                <div class="ContactForm">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="AddContact">
+                            <div class="form-group">
+                                @Html.Label("Email", htmlAttributes: new { @class = "Emailtext" })
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "ContactInput" } })
+                                <div class="col-md-10">
+
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <label class="label-danger">@ViewBag.ContactError </label>
+                            <label class="label-success">@ViewBag.ContactSuccess </label>
+                            <div class="form-group" id="What">
+
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Subscribe" class="Subbscribe" />
+                                </div>
+                            </div>
+                        </div>
+
                     }
                 </div>
             </div>
         </conteiner>
     </section>
-    <section>
-        <conteiner>
-            <div class="Contact">
-                @using (Html.BeginForm())
-                {
-                <div class="AddContact">
-                    <div class="form-group">
-                        @Html.Label("Email", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <label class="label-danger">@ViewBag.ContactError </label>
-                    <label class="label-success">@ViewBag.ContactSuccess </label>
-                    <div class="form-group" id="What">
+    <footer >
+        <div class="footer">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-4">
+                    <p style="   font-size: 30px; color: #FFFFFF;">Contact us</p>
 
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Subscribe" class="btn btn-default" />
-                        </div>
-                    </div>
+                    <p style="padding: 0; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                    font-weight: 700; color: #FFFFFF;">email: Rainbow@gmail.com</p>
+                    <p style="padding: 0; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                    font-weight: 700; color: #FFFFFF;">phone: 228 - 1336 - 007</p>
                 </div>
+                <div class="col-md-4">
 
-                }
+                    <p style="   font-size: 30px; color: #FFFFFF;">Quick jump</p>
+                    <p>
+                        <a href="#Home" style="padding: 0; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                            font-weight: 700; color: #FFFFFF;">Home</a>
+                    </p>
+                    <p>
+                        <a href="#What" style="padding: 40px; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                            font-weight: 700; color: #FFFFFF;">What we Can?</a>
+                    </p>
+                    <p>
+                        <a href="#Login" style=" font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                            font-weight: 700; color: #FFFFFF;">Login</a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 DoubleRainBow">
 
 
+                </div>
             </div>
-        </conteiner>
-    </section>
+            <div class="Copyright">
+                <p>Copyright 2019 Rainbow TM</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

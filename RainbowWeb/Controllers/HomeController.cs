@@ -22,9 +22,10 @@ namespace RainbowWeb.Controllers
         {
             if ((user.Login == "" || user.Login == null) && user.Email != "")
             {
-                AddContacts.Add(user);
+                if (AddContacts.Add(user)) ViewBag.ContactSuccess = "Подписка оформленна!";
+                else
                 ViewBag.ContactError = "Пользователь с такой почтой уже подписан на рассылку!";
-                ViewBag.ContactSuccess = "Подписка оформленна!";
+                
 
             }
             else if (Autification.IsRegstered(user))
@@ -35,6 +36,7 @@ namespace RainbowWeb.Controllers
                 else return View("../Home/About");
             }
             else ViewBag.LoginError = "Invalid data";
+            ModelState.Clear();
             return View("../Home/Index");  // учетная запись пользователя
         }
 

@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title – приложение ASP.NET</title>
+    <link rel="stylesheet" href="~/Content/Index.css">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/Scripts/jquery-3.4.1.js"></script>
@@ -16,12 +17,49 @@
     </script>*@
 </head>
 <body>
+
     
-    <div class="container body-content">
         @RenderBody()
-        <hr />
-        
-    </div>
+     
+    <footer>
+        <div class="footer">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-4">
+                    <p style="   font-size: 30px; color: #FFFFFF;">Contact us</p>
+
+                    <p style="padding: 0; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                    font-weight: 700; color: #FFFFFF;">email: Rainbow@gmail.com</p>
+                    <p style="padding: 0; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                    font-weight: 700; color: #FFFFFF;">phone: 228 - 1336 - 007</p>
+                </div>
+                <div class="col-md-4">
+
+                    <p style="   font-size: 30px; color: #FFFFFF;">Quick jump</p>
+                    <p>
+                        <a href="#Home" style="padding: 0; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                            font-weight: 700; color: #FFFFFF;">Home</a>
+                    </p>
+                    <p>
+                        <a href="#What" style="padding: 40px; font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                            font-weight: 700; color: #FFFFFF;">What we Can?</a>
+                    </p>
+                    <p>
+                        <a href="#Login" style=" font-size: 25px; font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT';
+                            font-weight: 700; color: #FFFFFF;">Login</a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 DoubleRainBow">
+
+
+                </div>
+            </div>
+            <div class="Copyright">
+                <p>Copyright 2019 Rainbow TM</p>
+            </div>
+        </div>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

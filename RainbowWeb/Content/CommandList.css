@@ -1,7 +1,7 @@
 ﻿body {
     padding: 0;
     margin: 0;
-    background-color: blue;
+    
 }
 
 .Header {
@@ -28,7 +28,7 @@
     position: absolute;
     height: 250px;
     width: 250px;
-    background: url(../img/part1.png) no-repeat center top;
+    background: url(../img/RainbowMain/part1.png) no-repeat center top;
     display: block;
     background-size: cover;
 }
@@ -37,7 +37,7 @@
     position: absolute;
     height: 250px;
     width: 250px;
-    background: url(../img/part2.png) no-repeat center top;
+    background: url(../img/RainbowMain/part2.png) no-repeat center top;
     display: block;
     background-size: cover;
     margin-left: 240px;
@@ -70,7 +70,7 @@
     margin: 0 auto;
     width: 1000px;
     height: 100%;
-    /*background-color: black;*/
+    background-color: white;
 }
 
 .Command {
@@ -111,3 +111,4 @@
     width: 50%;
     float: left;
 }
+

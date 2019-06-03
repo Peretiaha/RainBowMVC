@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = null;
+    
 }
 
 <head>
@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body style="background: linear-gradient(180deg, #96f6f6,#0da3f1, #7e80ff);">
     <header class="Header">
         <div class="navbarLogo"></div>
         <div class="navbarLogo2"></div>
@@ -61,7 +61,7 @@
                                 </div>
                             </div>
                             <div class="ImgRight">
-                                @Html.Raw("<img style='width:370px; height:250px;' src=\"data:image/jpeg;base64,"
+                                @Html.Raw("<img style='width:370px; height:300px; background-size: cover;' src=\"data:image/jpeg;base64,"
                                       + Convert.ToBase64String(i.Img) + "\" />")
                             </div>
                         </div>
@@ -74,8 +74,6 @@
             </div>
         </section>
     </container>
-
-
 
 </body>
 
