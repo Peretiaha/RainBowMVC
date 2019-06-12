@@ -33,16 +33,30 @@ namespace RainbowWeb.Controllers
 
                 if (Autification.UserStatus(user) == true)
                     return View("../Admin/AddCommand");  //Админ панель
-                else return View("../Home/About");
+               
+                else
+                {
+                    Users newuser = new Users();
+                    using (DbModel db = new DbModel())
+                    {
+                        foreach (var i in db.Users)
+                        {
+                            if (user.Login == i.Login && user.Password == i.Password)
+                                newuser = i;
+                        }
+                        return View("../Admin/UsersProfile", newuser);
+                    }
+                } 
             }
             else ViewBag.LoginError = "Invalid data";
             ModelState.Clear();
             return View("../Home/Index");  // учетная запись пользователя
         }
 
-        public ActionResult About()
+        public ActionResult About(Users user)
         {
             ViewBag.Message = "Your application description page.";
+            ViewBag.User = user;
 
             return View();
         }

@@ -24,7 +24,7 @@ namespace RainbowWeb.Controllers
             if (Registration.Add(user))
             {
                 ViewBag.Success = "Пользователь успешно зарегестрирован!";
-                return View();
+                return View("../Admin/UsersProfile",user);
             }
 
             else ViewBag.ErrorMessage = "Такой пользователь уже существует!";

@@ -20,7 +20,7 @@ namespace RainbowWeb.Models
                     lus.Login = user.Login;
                     lus.Password = user.Password;
                     lus.Status = true;
-
+                    
                     db.LoginUsers.Add(lus);
                     db.SaveChanges();
                     return true;

@@ -28,5 +28,14 @@ namespace RainbowWeb.Controllers
 
             return View();
         }
+
+
+        [HttpGet]
+        public ActionResult UsersProfile(Users users)
+        {
+            
+
+                    return View(users);
+        }
     }
 }

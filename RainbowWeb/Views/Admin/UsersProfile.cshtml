@@ -1,0 +1,76 @@
+﻿@model RainbowWeb.Models.Users
+
+@{
+    ViewBag.Title = "UsersProfile";
+
+}
+
+
+<head>
+    <link type="text/css" rel="stylesheet" href="~/Content/Site.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.css" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+
+</head>
+
+<header class="Header">
+    <div class="navbarLogo"></div>
+    <div class="navbarLogo2"></div>
+    <div class="Nav">
+        <nav class="MyNavBar" id="menu">
+            <div class="NavBlock">
+                @*<a href="#Home">Home</a>*@
+                @Html.ActionLink("Home", "../Home/Index")
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<h2>UsersProfile</h2>
+
+<div class="UserProfile">
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PromoCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PromoCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+
+</p>
